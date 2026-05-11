@@ -1,0 +1,30 @@
+
+.zip
+.csv
+
+results/
+save_summary_model/
+data/
+*.bin
+*.pt
+*.pth
+*.safetensors
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Hugging Face checkpoints
+results/checkpoint-*/
+
+# Saved models
+save_summary_model/
+
+# Sample data
+sample_data/
+
+# Environment
+venv/
+.env
