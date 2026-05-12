@@ -72,9 +72,33 @@
             margin-top: 0px;
             margin-bottom: 0px;
         }
+       #woman-image {
+            position: fixed;
+            left: 40px;
+            top: 320px;
+            width: 390px;
+            animation: floatAnimation 3s ease-in-out infinite;
+        }
+     
+
+    /* Floating Animation */
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
     </style>
 </head>
 <body>
+    <img src="\img\woman.png" alt="Summarizer Icon" id="woman-image">
     <div class="container">
         <h1>Text Summarizer</h1>
         <h3>using HuggingFace Transformer</h3>

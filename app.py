@@ -10,7 +10,7 @@ from fastapi.staticfiles import StaticFiles
 
 # initallize our fastapi 
 app=FastAPI(title="Text Summarizer App",description="Test Summarizer using T5",version="1.0 ")
-
+app.mount("/img", StaticFiles(directory="img"), name="img")
 #model and Tokenizer
 model=T5ForConditionalGeneration.from_pretrained("./save_summary_model")
 tokenizer=T5Tokenizer.from_pretrained("./save_summary_model")
